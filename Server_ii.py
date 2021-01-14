@@ -4,7 +4,7 @@ import json
 HEADER = 64  #header is 64 bytes
 PORT = 55555
 
-SERVER = '127.0.0.1' #local IPv4 address
+SERVER = socket.gethostbyname(socket.gethostname()) #local IPv4 address
 ADDR = (SERVER ,PORT) # IPv4 and port number
 FORMAT = 'utf-8'  # encoding format for messages
 DISCONNECT_MESSAGE = "!DISCONNECT" # if sent by the client it will be disconnected from the server

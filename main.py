@@ -14,7 +14,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.PORT = 55555
         self.FORMAT = 'utf-8'
         self.DISCONNECT_MESSAGE = "!DISCONNECT"
-        self.SERVER = '127.0.0.1'
+        self.SERVER = socket.gethostbyname(socket.gethostname())
         self.ADDR = (self.SERVER ,self.PORT)
         self.ui.pushButton.clicked.connect(self.Chat)
         self.ui.ui.pushButton.clicked.connect(self.GetEnteredText)
