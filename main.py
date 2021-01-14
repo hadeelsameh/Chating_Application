@@ -52,9 +52,9 @@ class ApplicationWindow(QtWidgets.QMainWindow):
     def InserText(self, msg, identitiy):
         
         if identitiy == "Me":
-            word = '<p  style=\" color: #008000; font-size: 16pt;  \">%s</p>' % msg
+            word = '<p  style=\" color: #FFFFFF; font-size: 16pt;  \">%s</p>' % msg
         elif identitiy == "Not Me":
-            word = '<p  style=\" color: #00008B; font-size: 16pt;  \">%s</p>' % msg
+            word = '<p  style=\" color: #FF00FF; font-size: 16pt;  \">%s</p>' % msg
             
         self.ui.ui.textBrowser.append(word)
 
