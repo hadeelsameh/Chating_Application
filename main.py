@@ -14,7 +14,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.PORT = 5050
         self.FORMAT = 'utf-8'
         self.DISCONNECT_MESSAGE = "!DISCONNECT"
-        self.SERVER = "172.20.10.2"
+        self.SERVER = "ENTER YOUR IP"
         self.ADDR = (self.SERVER ,self.PORT)
         self.ui.pushButton.clicked.connect(self.Chat)
         self.ui.ui.pushButton.clicked.connect(self.GetEnteredText)
