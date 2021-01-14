@@ -1,1 +1,1 @@
-# ChatTing_Application_Socket_Programming
+# Chatting_Application_Socket_Programming
