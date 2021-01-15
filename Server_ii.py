@@ -12,7 +12,7 @@ DISCONNECT_MESSAGE = "!DISCONNECT" # if sent by the client it will be disconnect
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM) # starting the server with TCP
 server.bind(ADDR)
 
-Clients = [] #list to save iddress of conected clients
+Clients = [] #list to save address of conected clients
 Clients_Names = [] #list to save user name of conected clients
 
 
