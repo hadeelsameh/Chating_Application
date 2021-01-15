@@ -63,8 +63,14 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         textBoxValue = self.ui.ui.textEdit.toPlainText()
         # print(textBoxValue)
         # self.InserText(textBoxValue)
-        self.send(textBoxValue)
-        self.ui.ui.textEdit.clear() 
+        try:
+            self.send(textBoxValue)
+            self.ui.ui.textEdit.clear()
+        except ConnectionAbortedError: 
+            self.ui.ui.textEdit.clear()
+            self.ui.ui.textBrowser.append('you are disconnected')
+
+
 
 def main():
     app = QtWidgets.QApplication(sys.argv)
