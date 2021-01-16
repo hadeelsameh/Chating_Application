@@ -8,7 +8,7 @@ For the extra credit we implemented encryption as a server security, when messag
 
 
 # Team members
-### Shimaa Gamal 
+### Shaimaa Gamal 
 ### Merna Saleh
 ### Noran Tharowat
 ### Hadeel Sameh
